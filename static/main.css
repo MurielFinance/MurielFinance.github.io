@@ -62,7 +62,7 @@ h2 {
   font-size: 40px;
   font-family: "ArchiaSemiBold";
   font-weight: 500;
-  line-height: 64px;
+  line-height: 56px;
   margin-bottom: 16px;
 }
 
@@ -82,21 +82,25 @@ p {
 .body-large {
   font-size: 24px;
   color:#747474;
-  line-height: 48px;
+  line-height: 44px;
 }
 
 .body-medium {
   font-size: 20px;
   color:#747474;
-  line-height: 32px;
+  line-height: 36px;
 }
 
 .body-small {
-
+  font-size: 18px;
+  color: #747474;
+  line-height: 24px;
 }
 
 .body-extrasmall {
-
+  font-size: 16px;
+  color: #747474;
+  line-height: 20px;
 }
 
 
@@ -183,6 +187,11 @@ p {
 .hero {
   position: relative;
   margin-bottom: 400px;
+}
+
+.hero-secondary {
+  position: relative;
+  margin-bottom: 56px;
 }
 
 .hero-text {
@@ -313,10 +322,16 @@ p {
 
 
 /* Pricing */
+.prices {
+  padding-bottom: 80px;
+}
+
 .pricing-cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 32px;
+  margin-bottom: 24px;
 }
 
 .pricing-card {
@@ -341,6 +356,13 @@ p {
   margin-bottom: -4px;
 }
 
+.price {
+  margin: 0;
+}
+
+.pricing-category {
+  margin-bottom: 24px;
+}
 
 
 
