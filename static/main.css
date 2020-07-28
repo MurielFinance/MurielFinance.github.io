@@ -94,7 +94,7 @@ p {
 .body-small {
   font-size: 18px;
   color: #747474;
-  line-height: 24px;
+  line-height: 32px;
 }
 
 .body-extrasmall {
@@ -365,6 +365,21 @@ p {
 }
 
 
+
+
+/* FAQ */
+.faqs {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.faq {
+  margin-bottom: 64px;
+}
+
+.faq-body {
+  padding-top: 8px;
+}
 
 /* Footer */
 .footer {
