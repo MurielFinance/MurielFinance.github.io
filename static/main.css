@@ -182,7 +182,6 @@ p {
 
 
 
-
 /* Hero */
 .hero {
   position: relative;
@@ -404,17 +403,21 @@ p {
 }
 
 .footer-bar-content {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 40px;
+  padding-bottom: 48px;
   max-width: 1024px;
   margin: auto;
   align-items: center;
   display: flex;
 }
 
-.nav-logo-icon img {
+.footer-logo img {
   width: 32px;
-  padding-right: 24px;
+  padding-right: 64px;
+}
+
+.footer-logo {
+  margin-bottom: auto;
 }
 
 .footer-links img {
@@ -429,3 +432,40 @@ p {
   z-index: -1;
 }
 
+.footer-rows {
+  width: 100%;
+}
+
+.footer-row-1 {
+  display: flex;
+  width: 100%;
+  padding-bottom: 32px;
+}
+
+.footer-row-2 {
+  height: 1px;
+  border-top: 1px solid #D8D8D8;
+  display: flex;
+  width: 100%;
+  padding-top: 32px;
+}
+
+.slogan {
+  font-size: 16px;
+  color: #747474;
+}
+
+.footer-item {
+  font-size: 20px;
+  padding-right: 32px;
+  text-decoration: none;
+  color: #1b1b1b;
+}
+
+.secondary-footer-item {
+  font-size: 16px;
+  padding-right: 32px;
+  text-decoration: none;
+  color: #1b1b1b;
+}
+ 
