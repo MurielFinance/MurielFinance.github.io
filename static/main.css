@@ -193,6 +193,12 @@ p {
   margin-bottom: 56px;
 }
 
+.hero-underline {
+  border-bottom: 4px solid #FF5D00;
+  font-family: "ArchiaSemiBold";
+  font-weight: 500;
+}
+
 .hero-text {
   max-width: 600px;
 }
