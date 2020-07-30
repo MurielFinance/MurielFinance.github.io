@@ -365,6 +365,26 @@ p {
 
 
 
+/* Legal */
+.terms {
+  max-width: 800px;
+}
+
+.privacy {
+  max-width: 800px;
+}
+
+.legal-header-small {
+  margin-top: 80px;
+  margin-bottom: 16px;
+}
+
+.privacy-body {
+  margin-top: 40px;
+}
+
+
+
 /* FAQ */
 .faqs {
   padding-top: 100px;
@@ -439,7 +459,7 @@ p {
 .footer-row-1 {
   display: flex;
   width: 100%;
-  padding-bottom: 32px;
+  padding-bottom: 40px;
 }
 
 .footer-row-2 {
@@ -447,7 +467,7 @@ p {
   border-top: 1px solid #D8D8D8;
   display: flex;
   width: 100%;
-  padding-top: 32px;
+  padding-top: 30px;
 }
 
 .slogan {
