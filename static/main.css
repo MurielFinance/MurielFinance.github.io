@@ -303,12 +303,9 @@ p {
 
 
 /* Features */
-.feature-row {
-  display: flex;
-  flex-direction: row;
+.features {
+  display: inline-flex;
   flex-wrap: wrap;
-  width: 100%;
-  padding-bottom: 80px;
 }
 
 .coming-soon-tag {
@@ -319,23 +316,25 @@ p {
   text-align: center;
   align-items: center;
   margin-bottom: 24px;
+  height: 43.5px;
 }
 
 .feature {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
+  display: inline-block;
   text-align: center;
   align-items: center;
-  padding-left: 48px;
-  padding-right: 48px;
+  width: 33%;
+  margin-bottom: 112px;
+}
+
+.feature-body {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .feature-image {
   max-width: 120px;
-  display: flex;
-  flex-direction: row;
+  display: inline-block;
   margin-bottom: 16px;
 }
 
@@ -658,11 +657,21 @@ p {
 }
 
 
-/* @1024 Mobile */
+/* Mobile */
 @media (max-width:400px){
   .content {
     padding-left: 24px;
     padding-right: 24px;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .nav {
@@ -708,7 +717,7 @@ p {
   .highlight-header {
     font-size: 24px;
     line-height: 40px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
   }
 
   .highlight-left {
@@ -722,7 +731,7 @@ p {
 
   .highlight-left-text {
     text-align: center;
-    padding-top: 80px;
+    padding-top: 88px;
   }
   
   .highlight-right {
@@ -736,7 +745,7 @@ p {
 
   .highlight-right-text {
     text-align: center;
-    padding-top: 80px;
+    padding-top: 88px;
   }
 
   .body-large {
@@ -750,6 +759,100 @@ p {
   
   .nav-item {
     display: none;
+  }
+
+  .feature {
+    width: 50%;
+    padding: 0;
+    margin-bottom: 80px;
+  }
+
+  .feature-image {
+    margin: 0;
+    max-width: 100px;
+  }
+
+  .feature-body {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .coming-soon-tag {
+    margin-bottom: 8px;
+    height: 33px;
+  }
+
+  .coming-soon-text {
+    font-size: 14px;
+    padding: 8px 12px 8px 12px;
+    border-radius: 10px;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .footer-image {
+    display: none;
+  }
+
+  .footer-description {
+    padding-top: 16px;
+  }
+
+  .footer-bar-content {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 40px;
+    display: inline-block;
+  }
+
+  .footer-logo {
+    text-align: center;
+  }
+
+  .footer-row-1 {
+    display: inline-block;
+    padding-bottom: 32px;
+  }
+
+  .footer-row-2 {
+    display: inline-block;
+    padding-top: 16px;
+  }
+
+  .footer-logo img {
+    padding-right: 0;
+    padding-bottom: 16px;
+  }
+
+  .footer-item {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+    padding-top: 24px;
+  }
+
+  .footer-links {
+    text-align: center;
+    padding-top: 32px;
+  }
+
+  .secondary-footer-item {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-top: 24px;
+    padding-right: 0;
+  }
+
+  .slogan {
+    text-align: center;
+    padding-top: 40px;
   }
 
 
