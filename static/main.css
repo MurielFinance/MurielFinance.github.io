@@ -220,7 +220,7 @@ p {
 
 .hero-secondary {
   position: relative;
-  margin-bottom: 64px;
+  margin-bottom: 56px;
 }
 
 .hero-underline {
@@ -235,9 +235,8 @@ p {
   padding-bottom: 16px;
 }
 
-
 .hero-description {
-  padding-top: 32px;
+  padding-top: 8px;
   max-width: 850px;
 }
 
@@ -261,7 +260,7 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-bottom: 160px;
+  padding-bottom: 112px;
 }
 
 .highlight-left-image {
@@ -282,7 +281,7 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-bottom: 160px;
+  padding-bottom: 112px;
 }
 
 .highlight-right-image {
@@ -324,7 +323,7 @@ p {
   text-align: center;
   align-items: center;
   width: 33%;
-  margin-bottom: 112px;
+  margin-bottom: 56px;
 }
 
 .feature-body {
@@ -356,10 +355,6 @@ p {
 
 
 /* Pricing */
-.prices {
-  padding-bottom: 80px;
-}
-
 .pricing-cards {
   margin-bottom: 24px;
   display: flex;
@@ -438,10 +433,6 @@ p {
 
 
 /* FAQ */
-.faqs {
-  padding-bottom: 100px;
-}
-
 .faq {
   margin-bottom: 64px;
 }
@@ -594,11 +585,6 @@ p {
     margin-top: 100px;
   }
 
-  .feature {
-    padding-right: 32px;
-    padding-left: 32px;
-  }
-
   .highlight-left-image {
     width: 380px;
     margin-right: 40px;
@@ -607,14 +593,6 @@ p {
   .highlight-right-image {
     width: 380px;
     margin-left: 40px;
-  }
-
-  .highlight-left {
-    padding-bottom: 112px;
-  }
-
-  .highlight-right {
-    padding-bottom: 112px;
   }
 
   .highlight-left-image {
@@ -654,6 +632,11 @@ p {
     right: -20px;
     bottom: -270px;
   }
+
+  .feature-body {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 
@@ -676,7 +659,7 @@ p {
 
   .nav {
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 40px;
   }
 
   .hero {
@@ -691,13 +674,18 @@ p {
   .hero-description {
     font-size: 18px;
     line-height: 32px;
-    padding-top: 16px;
+    padding-top: 0px;
   }
 
   .hero-image {
     bottom: -520px;
     right: -170px;
     width: 640px;
+  }
+
+  .hero-icon {
+    width: 80px;
+    margin-bottom: 24px;
   }
 
   .download-buttons {
@@ -755,6 +743,8 @@ p {
 
   .nav-mobile {
     display: flex;
+    padding: 8px;
+    margin: -8px;
   }
   
   .nav-item {
@@ -764,7 +754,6 @@ p {
   .feature {
     width: 50%;
     padding: 0;
-    margin-bottom: 80px;
   }
 
   .feature-image {
@@ -790,9 +779,13 @@ p {
     border-radius: 10px;
   }
 
+  .pricing-cards {
+    flex-direction: column;
+  }
+
   .footer {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 40px;
   }
 
   .footer-image {
@@ -800,7 +793,7 @@ p {
   }
 
   .footer-description {
-    margin-top: 16px;
+    padding-top: 16px;
   }
 
   .footer-bar-content {
