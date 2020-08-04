@@ -554,14 +554,14 @@ p {
 
 .footer-item {
   font-size: 20px;
-  padding-right: 32px;
+  margin-right: 32px;
   text-decoration: none;
   color: #1b1b1b;
 }
 
 .secondary-footer-item {
   font-size: 16px;
-  padding-right: 32px;
+  margin-right: 32px;
   text-decoration: none;
   color: #1b1b1b;
 }
@@ -800,13 +800,13 @@ p {
   }
 
   .footer-description {
-    padding-top: 16px;
+    margin-top: 16px;
   }
 
   .footer-bar-content {
     padding-left: 24px;
     padding-right: 24px;
-    padding-bottom: 40px;
+    padding-bottom: 24px;
     display: inline-block;
   }
 
@@ -817,7 +817,7 @@ p {
   .footer-row-1 {
     display: inline-block;
     padding-bottom: 32px;
-  }
+    }
 
   .footer-row-2 {
     display: inline-block;
@@ -825,34 +825,37 @@ p {
   }
 
   .footer-logo img {
-    padding-right: 0;
-    padding-bottom: 16px;
+    padding: 0;
+    margin-bottom: 8px;
   }
 
   .footer-item {
     display: inline-block;
     width: 100%;
     text-align: center;
-    padding-right: 0;
-    padding-top: 24px;
+    padding: 8px;
+    margin: -8px;
+    margin-top: 24px;
   }
 
   .footer-links {
     text-align: center;
-    padding-top: 32px;
+    padding: 8px;
+    margin-top: 24px;
   }
 
   .secondary-footer-item {
     display: inline-block;
     width: 100%;
     text-align: center;
-    padding-top: 24px;
-    padding-right: 0;
+    padding: 8px;
+    margin: -8px;
+    margin-top: 16px;
   }
 
   .slogan {
     text-align: center;
-    padding-top: 40px;
+    margin-top: 32px;
   }
 
 
