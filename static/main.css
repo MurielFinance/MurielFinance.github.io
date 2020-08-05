@@ -205,7 +205,9 @@ p {
   text-decoration: none;
   font-size: 20px;
   color: #1b1b1b;
-  padding-bottom: 24px;
+  padding: 8px;
+  margin: -8px;
+  margin-bottom: 24px;
 }
 
 
@@ -610,7 +612,7 @@ p {
 
 
 
-/* @1024 Tablet Landsacpe */
+/* Tablet Landsacpe */
 @media (max-width:1024px){
   .content {
     padding-left: 64px;
@@ -637,6 +639,14 @@ p {
     padding-left: 24px;
     padding-right: 24px;
   }
+}
+
+/* Tablet */
+@media (max-width:768px){
+  .pricing-cards {
+    flex-direction: column;
+  }
+
 }
 
 
@@ -751,6 +761,10 @@ p {
     display: none;
   }
 
+  .features {
+    padding-bottom: 24px;
+  }
+
   .feature {
     width: 50%;
     padding: 0;
@@ -779,13 +793,21 @@ p {
     border-radius: 10px;
   }
 
+  .prices {
+    padding-bottom: 80px;
+  }
+
   .pricing-cards {
     flex-direction: column;
   }
 
+  .faqs {
+    padding-bottom: 16px;
+  }
+
   .footer {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 0;
   }
 
   .footer-image {
