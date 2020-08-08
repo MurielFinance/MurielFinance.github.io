@@ -238,7 +238,7 @@ p {
 }
 
 .hero-description {
-  padding-top: 8px;
+  padding-top: 16px;
   max-width: 850px;
 }
 
@@ -627,7 +627,6 @@ p {
   .download-button {
     margin-right: 16px;
   }
-  
 
   .footer-image {
     width: 380px;
@@ -642,10 +641,100 @@ p {
 }
 
 /* Tablet */
-@media (max-width:768px){
+@media (max-width:768px) {
+  .content {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  h1 {
+    font-size: 56px;
+    line-height: 72px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  
+  p {
+
+  }
+  
+  .body-large {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  
+  .body-medium {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  
+  .body-small {
+
+  }
+  
+  .body-extrasmall {
+
+  }
+
+  .nav {
+    padding-top: 48px;
+    padding-bottom: 40px;
+  }
+
+  .hero {
+    margin-bottom: 560px;
+  }
+
+  .hero-image {
+    bottom: -470px;
+    right: -220px;
+  }
+
+  .hero-text {
+    font-size: 64px;
+    line-height: 88px;
+  }
+
+  .download-buttons {
+    padding-top: 32px;
+  }
+
+  .button-main, .button-header {
+    display: none;
+  }
+
+  .download-button img {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 12px;
+  }
+  
   .pricing-cards {
     flex-direction: column;
   }
+
+  .highlight-left-image {
+    margin-right: 24px;
+    width: 320px;
+  }
+
+  .highlight-right-image {
+    margin-left: 24px;
+    width: 320px;
+  }
+
+  .footer-image {
+    width: 340px;
+    right: 0px;
+    bottom: -360px;
 
 }
 
@@ -661,10 +750,37 @@ p {
     font-size: 32px;
     line-height: 48px;
   }
+  
+  h2 {
+    font-size: 24px;
+    line-height: 40px;
+  }
 
   h3 {
     font-size: 18px;
     line-height: 24px;
+  }
+  
+  p {
+
+  }
+  
+  .body-large {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  
+  .body-medium {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .body-small {
+
+  }
+  
+  .body-extrasmall {
+
   }
 
   .nav {
@@ -682,9 +798,7 @@ p {
   }
 
   .hero-description {
-    font-size: 18px;
-    line-height: 32px;
-    padding-top: 0px;
+    padding-top: 4px;
   }
 
   .hero-image {
@@ -698,23 +812,7 @@ p {
     margin-bottom: 24px;
   }
 
-  .download-buttons {
-    padding-top: 32px;
-  }
-
-  .button-main, .button-header {
-    display: none;
-  }
-
-  .download-button img {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-right: 12px;
-  }
-
   .highlight-header {
-    font-size: 24px;
-    line-height: 40px;
     margin-bottom: 16px;
   }
 
@@ -746,11 +844,6 @@ p {
     padding-top: 88px;
   }
 
-  .body-large {
-    font-size: 18px;
-    line-height: 32px;
-  }
-
   .nav-mobile {
     display: flex;
     padding: 8px;
@@ -776,8 +869,6 @@ p {
   }
 
   .feature-body {
-    font-size: 16px;
-    line-height: 24px;
     padding-left: 8px;
     padding-right: 8px;
   }
