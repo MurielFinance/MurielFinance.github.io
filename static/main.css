@@ -571,15 +571,15 @@ p {
   }
 }
 
-@media (max-width:1080px){
+@media (max-width:1080px) {
   .hero-image {
     bottom: -220px;
     right: -340px;
   }
 
   .footer-image {
-    width: 380px;
-    right: -20px;
+    width: 360px;
+    right: -40px;
     bottom: -270px;
   }
 
@@ -613,7 +613,7 @@ p {
 
 
 /* Tablet Landsacpe */
-@media (max-width:1024px){
+@media (max-width:1024px) {
   .content {
     padding-left: 64px;
     padding-right: 64px;
@@ -641,10 +641,15 @@ p {
 }
 
 /* Tablet */
-@media (max-width:768px) {
+@media (max-width:1023px) {
   .content {
     padding-left: 48px;
     padding-right: 48px;
+    max-width: 700px;
+  }
+
+  .footer-bar-content {
+    max-width: 700px;
   }
 
   h1 {
@@ -749,10 +754,15 @@ p {
 
 
 /* Mobile */
-@media (max-width:680px){
+@media (max-width:680px) {
   .content {
     padding-left: 24px;
     padding-right: 24px;
+    max-width: 500px;
+  }
+
+  .footer-bar-content {
+    max-width: 500px;
   }
 
   h1 {
