@@ -38,7 +38,7 @@ p, h1, h2, h3, h4, h5 {
   background-image: url("../static/graph.svg");
   background-repeat: no-repeat;
   background-size: inherit;
-  background-position-y: 280px;
+  background-position-y: 0px;
   background-position-x: center;
 }
 
@@ -217,12 +217,17 @@ p {
 /* Hero */
 .hero {
   position: relative;
-  margin-bottom: 400px;
+  margin-bottom: 260px;
 }
 
 .hero-secondary {
   position: relative;
   margin-bottom: 56px;
+}
+
+.hero-secondary-no-description {
+  position: relative;
+  margin-bottom: 24px;
 }
 
 .hero-underline {
@@ -436,7 +441,7 @@ p {
 
 /* FAQ */
 .faq {
-  margin-bottom: 64px;
+  margin-bottom: 56px;
 }
 
 .faq-body {
@@ -456,12 +461,16 @@ p {
 }
 
 .legal-header-small {
-  margin-top: 80px;
+  margin-top: 56px;
   margin-bottom: 16px;
 }
 
 .privacy-body {
-  margin-top: 40px;
+  margin-top: 24px;
+}
+
+.date {
+  margin-bottom: 56px;
 }
 
 
@@ -583,7 +592,7 @@ p {
     bottom: -270px;
   }
 
-  .footer-bar {
+  .footer-bar { 
     margin-top: 100px;
   }
 
@@ -659,7 +668,7 @@ p {
   
   h2 {
     font-size: 24px;
-    line-height: 40px;
+    line-height: 36px;
   }
   
   h3 {
@@ -726,6 +735,10 @@ p {
     flex-direction: column;
   }
 
+  .pricing-card {
+    padding: 32px;
+  }
+
   .highlight-left-image {
     margin-right: 24px;
     width: 320px;
@@ -771,12 +784,11 @@ p {
   }
   
   h2 {
-    font-size: 24px;
-    line-height: 40px;
+  
   }
 
   h3 {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 24px;
   }
   
@@ -785,17 +797,18 @@ p {
   }
   
   .body-large {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 32px;
   }
   
   .body-medium {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 28px;
   }
   
   .body-small {
-
+    font-size: 16px;
+    line-height: 24px;
   }
   
   .body-extrasmall {
@@ -822,17 +835,17 @@ p {
 
   .hero-image {
     bottom: -520px;
-    right: -170px;
+    right: -180px;
     width: 640px;
   }
 
   .hero-icon {
-    width: 80px;
-    margin-bottom: 24px;
+    width: 64px;
+    margin-bottom: 16px;
   }
 
   .highlight-header {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
   }
 
   .highlight-left {
@@ -885,6 +898,7 @@ p {
   .feature-image {
     margin: 0;
     max-width: 100px;
+    margin-bottom: 8px;
   }
 
   .feature-body {
