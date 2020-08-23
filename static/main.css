@@ -774,6 +774,11 @@ p {
     max-width: 500px;
   }
 
+  .container-image {
+    background-image: url("../static/graph-mobile.svg");
+    background-position-y: 200px;
+  }
+
   .footer-bar-content {
     max-width: 500px;
   }
@@ -1003,4 +1008,11 @@ p {
     margin-top: 32px;
   }
 
+}
+
+/* Mobile - Background Adjust */
+@media (max-width:450px) {
+  .container-image {
+    background-position-y: 280px;
+  }
 }
