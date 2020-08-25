@@ -408,6 +408,8 @@ p {
   padding: 6px 6px 6px 6px; 
   border-radius: 100px;
   margin-bottom: 40px;
+  margin-top: 40px;
+  position: relative;
 }
 
 .monthly-toggle {
@@ -436,6 +438,16 @@ p {
   background-color: #FFFFFF;
   border-radius: 100px;
   padding: 8px 0px 8px 0px; 
+}
+
+.pricing-toggle-message {
+  position: absolute;
+  left: 230px;
+  top: -48px
+}
+
+.pricing-toggle-message img {
+  height: 96px;
 }
 
 

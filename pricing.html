@@ -78,35 +78,38 @@
                   <div class="monthly-toggle">
                     <p>Monthly</p>
                   </div>
-              </div>
-              <div class="toggle-notselected">
-                <div class="anually-toggle">
-                  <p>Anually</p>
+                </div>
+                <div class="toggle-notselected">
+                  <div class="anually-toggle">
+                    <p>Anually</p>
+                  </div>
+                </div>
+                <div class="pricing-toggle-message">
+                 <img src="static/pricing-toggle-message-20.png"> 
                 </div>
               </div>
-              </div>
               <div class="pricing-cards">
-                <div class="pricing-card">
+                <div class="pricing-card" id="free">
                   <div class="pricing-category">
                     <p class="pricing-sub-header">Free</p>
                     <h2 class="price">$0</h2>
-                    <p class="body-extrasmall">Use manually</p>
+                    <p class="body-extrasmall frequency">Use manually</p>
                   </div>
                   <p class="body-medium">Enter your income and expenses manually.</p>
                 </div>
-                <div class="pricing-card">
+                <div class="pricing-card" id="standard">
                   <div class="pricing-category">
                     <p class="pricing-sub-header">Standard</p>
                     <h2 class="price">$4.99</h2>
-                    <p class="body-extrasmall">Per month</p>
+                    <p class="body-extrasmall frequency" >Per month</p>
                   </div>
                   <p class="body-medium">Connect up to three banks.</p>
                 </div>
-                <div class="pricing-card">
+                <div class="pricing-card" id="plus">
                   <div class="pricing-category">
                     <p class="pricing-sub-header">Plus</p>
                     <h2 class="price">$7.99</h2>
-                    <p class="body-extrasmall">Per month</p>
+                    <p class="body-extrasmall frequency">Per month</p>
                   </div>
                   <p class="body-medium">Connect up to seven banks.</p>
                 </div>
@@ -169,5 +172,42 @@
       </div>
     
     </div>
+  <script>
+     (() => {
+      let priceToggle = document.querySelector(".pricing-toggle");
+      let priceCards = document.querySelectorAll(".pricing-card");
+      let useAnnualPricing = false;
+      let pricing = {
+        month: [
+          { cost: "$0", tag: "Use manually" },
+          { cost: "$4.99", tag: "Per month" },
+          { cost: "$7.99", tag: "Per month" }
+        ],
+        annual: [
+          { cost: "$0", tag: "Use manually" },
+          { cost: "$47.90", tag: "Per year" },
+          { cost: "$76.70", tag: "Per year" }
+        ]
+      };
+      let getPriceType = () => (useAnnualPricing ? "annual" : "month");
+      let getCost = (idx) => pricing[getPriceType()][idx].cost;
+      let getCalloutText = (idx) => pricing[getPriceType()][idx].tag;
+
+      priceToggle.addEventListener("click", (e) => {
+        useAnnualPricing = !useAnnualPricing;
+
+        priceCards.forEach((card) => {
+          card.dispatchEvent(new CustomEvent("muriel-priceToggle"));
+        });
+      });
+
+      priceCards.forEach((card, idx) => {
+        card.addEventListener("muriel-priceToggle", () => {
+          card.querySelector(".price").innerText = getCost(idx);
+          card.querySelector(".frequency").innerText = getCalloutText(idx);
+        });
+      });
+    })();
+  </script>
   </body>
 </html>
