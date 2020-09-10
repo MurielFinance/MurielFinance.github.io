@@ -74,18 +74,18 @@
 
             <div class="prices">
               <div class="pricing-toggle">
-                <div class="toggle-selected">
+                <div class="toggle-selected month-toggle">
                   <div class="monthly-toggle">
                     <p>Monthly</p>
                   </div>
                 </div>
-                <div class="toggle-notselected">
+                <div class="toggle-notselected annual-toggle">
                   <div class="anually-toggle">
                     <p>Anually</p>
                   </div>
                 </div>
                 <div class="pricing-toggle-message">
-                 <img src="static/pricing-toggle-message-20.png"> 
+                  <img src="static/pricing-toggle-message-20.png" class="toggle-image"> 
                 </div>
               </div>
               <div class="pricing-cards">
@@ -177,6 +177,10 @@
      (() => {
       let priceToggle = document.querySelector(".pricing-toggle");
       let priceCards = document.querySelectorAll(".pricing-card");
+      let monthToggle = document.querySelector(".month-toggle");
+      let annualToggle = document.querySelector(".annual-toggle");
+      let toggleImage = document.querySelector(".toggle-image");
+
       let useAnnualPricing = false;
       let pricing = {
         month: [
@@ -190,12 +194,27 @@
           { cost: "$76.70", tag: "Per year" }
         ]
       };
+
       let getPriceType = () => (useAnnualPricing ? "annual" : "month");
       let getCost = (idx) => pricing[getPriceType()][idx].cost;
       let getCalloutText = (idx) => pricing[getPriceType()][idx].tag;
 
-      priceToggle.addEventListener("click", (e) => {
-        useAnnualPricing = !useAnnualPricing;
+      monthToggle.addEventListener("click", (e) => {
+        useAnnualPricing = false;
+        monthToggle.className = 'toggle-selected month-toggle'
+        annualToggle.className = 'toggle-notselected annual-toggle'
+        toggleImage.src = 'static/pricing-toggle-message-20.png'
+
+        priceCards.forEach((card) => {
+          card.dispatchEvent(new CustomEvent("muriel-priceToggle"));
+        });
+      });
+
+      annualToggle.addEventListener("click", (e) => {
+        useAnnualPricing = true;
+        monthToggle.className = 'toggle-notselected month-toggle'
+        annualToggle.className = 'toggle-selected annual-toggle'
+        toggleImage.src = 'static/pricing-toggle-message-nice.png'
 
         priceCards.forEach((card) => {
           card.dispatchEvent(new CustomEvent("muriel-priceToggle"));

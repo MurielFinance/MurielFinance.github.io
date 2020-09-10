@@ -411,13 +411,15 @@ p {
   margin-top: 40px;
   position: relative;
 }
+.pricing-toggle:hover {
+  cursor: pointer;
+}
 
 .monthly-toggle {
   font-size: 18px;
   display: inline-flex;
   padding-left: 24px;
   padding-right: 24px;
-  color: #ffffff;
 }
 
 .anually-toggle {
@@ -425,19 +427,20 @@ p {
   display: inline-flex;
   padding-right: 24px;
   padding-left: 24px;
-  color: #747474;
 }
 
 .toggle-selected{
   background-color: #FF5D00;
   border-radius: 100px;
   padding: 8px 0px 8px 0px; 
+  color: #ffffff;
 }
 
 .toggle-notselected{
   background-color: #FFFFFF;
   border-radius: 100px;
   padding: 8px 0px 8px 0px; 
+  color: #747474;
 }
 
 .pricing-toggle-message {
