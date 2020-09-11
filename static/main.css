@@ -1061,6 +1061,8 @@ p {
   outline: none;
   -moz-appearance: none;
   -webkit-appearance: none;
+  padding-top: 10px;
+  padding-left: 16px;
 }
 #mc_embed_signup div.clear {
   display: inline-block;
