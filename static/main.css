@@ -1036,7 +1036,7 @@ p {
 #mc_embed_signup {
   width: 480px;
   background-color: white;
-  border-radius: 12px;
+  border-radius: 16px;
   display: block;
   margin: auto;
   height: 64px;
@@ -1049,12 +1049,12 @@ p {
 #mc_embed_signup input.email.emailinput {
   top: 0px;
   display: inline-block;
-  height: 49px;
+  height: 44px;
   color: #1b1b1b;
   background-color: white;
   font-size: 17px;
-  border-radius: 12px;
-  font-family: 'Archia', sans-serif;
+  border-radius: 16px;
+  font-family: 'ArchiaRegular', sans-serif;
   border: none;
   width: 56%;
   /* Overwrite */
@@ -1072,13 +1072,13 @@ p {
   right: 0px;
   border: 2px solid #08E480;
   background-color: #EBFFF6;
-  border-radius: 8px;
+  border-radius: 10px;
   color: #1b1b1b;
   margin: 8px 8px 8px 0;
   font-size: 17px;
   height: 49px;
   font-weight: 600;
-  font-family: 'Archia', sans-serif;
+  font-family: 'ArchiaMedium', sans-serif;
   /* Overwrite default */
   outline: none;
   -webkit-appearance: none;
