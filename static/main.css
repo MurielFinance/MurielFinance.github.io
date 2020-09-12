@@ -719,11 +719,11 @@ p {
   }
 
   .hero {
-    margin-bottom: 560px;
+    margin-bottom: 700px; /* 560 with download buttons */
   }
 
   .hero-image {
-    bottom: -470px;
+    bottom: -600px; /* -470 with buttons */
     right: -220px;
   }
 
@@ -1097,32 +1097,35 @@ input.button:hover {
   opacity: 0.8;
 }
 
-@media (max-width: 900px) {
-  .container {
-    background-image: none;
-    background-color: black;
-    padding-bottom: 20px;
+@media (max-width: 680px) {
+  
+  .download-buttons {
+    display: inline-block;
+    width: 100%;
   }
 
   #mc_embed_signup {
     width: 100%;
-    margin-bottom: 46px;
     background-color: transparent;
+    margin: 0;
+    height: 56px;
   }
   #mc_embed_signup input.email.emailinput {
-    margin: 0px;
+    margin: 0;
     display: block;
     left: 0px;
-    border-radius: 8px;
+    border-radius: 10px;
     width: calc(100% - 24px);
+    height: 56px;
   }
   #mc_embed_signup div.clear {
     display: block;
   }
   #mc_embed_signup div.clear input.button {
-    top: 60px;
+    top: 70px;
     margin: 0px;
     left: 0px;
     width: 100%;
-    background-color: #141414;
+    height: 56px];
+    background-color: #EBFFF6;
   }
