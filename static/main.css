@@ -1034,7 +1034,7 @@ p {
 
 /* MailChimp */
 #mc_embed_signup {
-  width: 480px;
+  width: 460px;
   background-color: white;
   border-radius: 16px;
   display: block;
@@ -1049,7 +1049,7 @@ p {
 #mc_embed_signup input.email.emailinput {
   top: 0px;
   display: inline-block;
-  height: 44px;
+  height: 48px;
   color: #1b1b1b;
   background-color: white;
   font-size: 17px;
@@ -1061,8 +1061,8 @@ p {
   outline: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  padding-top: 10px;
-  padding-left: 16px;
+  padding: 0px 12px;
+  margin: 8px 0 8px 8px;
 }
 #mc_embed_signup div.clear {
   display: inline-block;
