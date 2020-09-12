@@ -480,10 +480,6 @@ p {
   margin-bottom: 16px;
 }
 
-.privacy-body {
-  margin-top: 24px;
-}
-
 .date {
   margin-bottom: 56px;
 }
@@ -585,8 +581,9 @@ p {
 
 
 
-
-/* RESPONSIVE */
+/* ############################################### */
+/* RESPONSIVE ############################################### */
+/* ############################################### */
 /* Awkward Areas */
 @media (max-width:1140px){
   .hero-image {
