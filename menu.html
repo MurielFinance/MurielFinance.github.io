@@ -27,27 +27,41 @@
     <link rel="shortcut icon" href="static/favicon.png">
   </head>
 
-  <div class="container">
-    <div class="content">
-      <div class="nav">
-        <div class="nav-logo">
-          <a href="index.html"> 
-            <img src="static/muriel-logo.svg" class="logo" alt="Muriel">
-          </a>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="nav">
+          <div class="nav-logo">
+            <a href="index.html"> 
+              <img src="static/muriel-logo.svg" class="logo" alt="Muriel">
+            </a>
+          </div>
+          <div class="flex-spacer"></div>
+          <div class="nav-pages">
+              <a href ="index.html" class="nav-mobile"><img src="./static/x.svg"></a>
+              <a href="pricing.html" class="nav-item">Pricing</a>
+              <!--<a href="" class="nav-item">Suggestions</a>-->
+              <a href="faq.html" class="nav-item">FAQ</a>
+          </div>
         </div>
-        <div class="flex-spacer"></div>
-        <div class="nav-pages">
-            <a href ="index.html" class="nav-mobile"><img src="./static/x.svg"></a>
-            <a href="pricing.html" class="nav-item">Pricing</a>
-            <!--<a href="" class="nav-item">Suggestions</a>-->
-            <a href="faq.html" class="nav-item">FAQ</a>
+        <div class="menu">
+          <a href="index.html" class="menu-item">Home</a>
+          <a href="pricing.html" class="menu-item">Pricing</a>
+          <!--<a href="index.html" class="menu-item">Suggestions</a>-->
+          <a href="faq.html" class="menu-item">FAQ</a>
         </div>
-      </div>
-      <div class="menu">
-        <a href="index.html" class="menu-item">Home</a>
-        <a href="pricing.html" class="menu-item">Pricing</a>
-        <!--<a href="index.html" class="menu-item">Suggestions</a>-->
-        <a href="faq.html" class="menu-item">FAQ</a>
       </div>
     </div>
-  </div>
+
+    <script>
+      window.intercomSettings = {
+        app_id: "soef9um9"
+      };
+    </script>
+    
+    <script>
+    // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/soef9um9'
+    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/soef9um9';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+    </script>
+
+  </body>
