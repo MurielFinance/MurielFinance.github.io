@@ -455,6 +455,10 @@ p {
 
 
 /* FAQ */
+.faqs {
+  max-width: 800px;
+}
+
 .faq {
   margin-bottom: 56px;
 }
