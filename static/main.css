@@ -783,6 +783,10 @@ p {
 
 /* Mobile */
 @media (max-width:680px) {
+  .pricing-toggle-message {
+    display: none;
+  }
+
   .content {
     padding-left: 24px;
     padding-right: 24px;
