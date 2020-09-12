@@ -1090,6 +1090,7 @@ p {
   /* Overwrite default */
   outline: none;
   -webkit-appearance: none;
+  letter-spacing: 0;
 }
 input.button:hover {
   cursor: pointer;
